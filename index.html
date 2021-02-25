@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <!-- É a cabeça do código, a parte pensante, cuida da coordenação do código. Guarda informações ligadas as configurações do código -->
+        <meta charset="UTF-8"> <!-- Padrão para aceitar caracteres com acentuação -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Utilizado para media-queries -->
+        <title> Netflix Clone </title>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+        <!-- Arquivos Owl Css -->
+        <link rel="stylesheet" href="CSS/Owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="CSS/Owl/owl.theme.default.min.css">
+
+        <!-- Responsividade -->
+        <link rel="stylesheet" href="CSS/responsive.css">
+    </head>
+
+    <body>
+        <!-- Responsável pelo corpo do site -->
+        <header>
+            <div class="container">
+                <h2 class="logo">
+                    Netflix
+                </h2>
+                <nav>
+                    <!-- Usado para criação de menus de navegação -->
+                    <a href="#"> Início </a>
+                    <a href="#"> Séries </a>
+                    <a href="#"> Filmes </a>
+                    <a href="#"> Documentários </a>
+                </nav>
+            </div>
+        </header> <!-- Todo elemento renderizado na tela, pensa-se em formato de caixa -->
+
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <!-- Repetindo para ficar responsivo, chamando isso de Wrapper -->
+                    <h3 class="titulo"> House of Cards </h3>
+                    <p class="descricao">
+                        Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assita
+                        agora a nova temporada de House of Cards que está imperdível.
+                    </p>
+
+                    <div class="botoes">
+                        <button class="botao" role="button">
+                            <!-- ROLE: indica que é um botão -->
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button class="botao" role="button">
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrosel-filme">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini1.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini2.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini3.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini4.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini5.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini6.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini7.jpg" alt="Capa do filme">
+                </div>
+                <div class="item"> 
+                    <img class="box-filme" src="Recursos/mini8.jpg" alt="Capa do filme">
+                </div>
+            </div>
+        </div>
+
+        <footer class="rodape">
+            <p>Feito por: Felipe Castro Ferreira &copy; | Última edição: 25/02/2020;</p> <br>
+            <p>Seguindo orientações: <a href="https://web.digitalinnovation.one/home" target="_blank">Digital Innovation One</a> | Ministrada por: Felipe Aguiar. </p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/b04b9edfbd.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+
+        <!-- Owl JS -->
+        <script src="JS/jquery.min.js"></script>
+        <script src="JS/owl.carousel.min.js"></script>
+        <script src="JS/main.js"></script>
+    </body>
+
+</html>

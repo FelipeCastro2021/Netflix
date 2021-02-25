@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 700px) { /* Esta regra está sendo aplicada na tela e quando ela for menor que 700px será aplicado*/
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 300px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .descricao {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .filme-principal {
+        height: 1080px;
+        font-size: 48px;
+    }
+
+    .filme-principal .titulo {
+        font-size: 96px;
+    }
+
+    .botao {
+        font-size: 28px;
+    }
+
+    header .container .logo {
+        font-size: 72px;
+    }
+
+    header nav a {
+        font-size: 28px;
+    }
+}

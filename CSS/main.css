@@ -1,0 +1,120 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* { /* Reset CSS */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ninguém irá ultrapassar a borda da caixa, se os elementos não caberem eles se exprimam */
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+/* ! Menu */
+header .container {
+    display: flex; /* Utiliza a flex box, alinha elementos em tela */
+    align-items: center; /* Vertical */
+    justify-content: space-between;
+}
+
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* ! Filme principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5) 100%), url('/Recursos/House_of_cards.jpg') center;
+
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical */
+    align-items: flex-start; /* Horizontal */
+}
+
+.filme-principal .descricao {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filme {
+    margin-top: 5px;
+}
+
+/* Rodapé */
+.rodape {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 2px solid white;
+    padding-top: 15px;
+}
+
+.rodape p {
+    margin: -8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
